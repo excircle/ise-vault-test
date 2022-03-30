@@ -17,3 +17,9 @@ provider "google" {
 provider "vault" {
   alias = "root_namespace"
 }
+
+// Root provider 
+provider "vault" {
+  namespace = enablement 
+  alias = "enablement_namespace"
+}
