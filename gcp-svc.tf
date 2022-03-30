@@ -7,8 +7,8 @@ variable "google_service_account_iam_roles" {
   type        = list(string)
   description = "List of IAM roles to give to service account"
   default = [
-    "roles/iam.securityAdmin,
-    "roles/iam.securityReviewer,
+    "roles/iam.securityAdmin",
+    "roles/iam.securityReviewer",
     "roles/owner",
     "roles/resourcemanager.projectIamAdmin"
   ]
