@@ -20,6 +20,6 @@ provider "vault" {
 
 // Root provider 
 provider "vault" {
-  namespace = enablement 
+  namespace = "enablement"
   alias = "enablement_namespace"
 }
