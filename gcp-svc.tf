@@ -11,8 +11,7 @@ variable "google_service_account_iam_roles" {
     "roles/iam.securityAdmin",
     "roles/iam.securityReviewer",
     "roles/resourcemanager.projectIamAdmin",
-    "iam.serviceAccounts.get",
-    "iam.serviceAccountKeys.get"
+    "roles/iam.serviceAccountKeyAdmin"
   ]
 }
 
