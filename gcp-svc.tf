@@ -10,8 +10,9 @@ variable "google_service_account_iam_roles" {
   default = [
     "roles/iam.securityAdmin",
     "roles/iam.securityReviewer",
-    "roles/owner",
-    "roles/resourcemanager.projectIamAdmin"
+    "roles/resourcemanager.projectIamAdmin",
+    "roles/iam.serviceAccounts.get",
+    "roles/iam.serviceAccountKeys.get"
   ]
 }
 
