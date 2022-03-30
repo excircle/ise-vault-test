@@ -18,8 +18,14 @@ provider "vault" {
   alias = "root_namespace"
 }
 
-// Root provider 
+// Enablement provider 
 provider "vault" {
   namespace = "enablement"
   alias = "enablement_namespace"
+}
+
+// team1 provider 
+provider "vault" {
+  namespace = "enablement/team1"
+  alias = "team1_namespace"
 }
