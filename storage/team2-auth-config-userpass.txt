@@ -1,0 +1,13 @@
+resource "vault_generic_endpoint" "team2_userpass_user_alex" {
+  provider             = vault.team2_namespace
+  depends_on           = [vault_auth_backend.team2_userpass]
+  path                 = "auth/userpass/users/alex"
+  ignore_absent_fields = true
+
+  data_json = <<EOT
+{
+  "password": "kalaj",
+  "token_policies": "team2-kv-reader"
+}
+EOT
+}

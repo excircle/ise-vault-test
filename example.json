@@ -1,0 +1,29 @@
+{
+  "request_id": "cd45ab4d-7558-06dc-c9d1-7b5fb0c900fb",
+  "lease_id": "",
+  "lease_duration": 0,
+  "renewable": false,
+  "data": null,
+  "warnings": null,
+  "auth": {
+    "client_token": "s.gkSdkW7gGgol6RPyi1zwX6FK.zL4NA",
+    "accessor": "p3GI10ZFLR4l1jPbPUWPkuQz.zL4NA",
+    "policies": [
+      "default",
+      "team2-kv-reader"
+    ],
+    "token_policies": [
+      "default",
+      "team2-kv-reader"
+    ],
+    "identity_policies": null,
+    "metadata": {
+      "username": "alex"
+    },
+    "orphan": true,
+    "entity_id": "d6243662-3f09-c730-7f77-a3dfbb65af95",
+    "lease_duration": 2764800,
+    "renewable": true,
+    "mfa_requirement": null
+  }
+}

@@ -1,0 +1,25 @@
+resource "vault_policy" "team2_kv_reader" {
+  provider = vault.team2_namespace
+  name = "team2-kv-reader"
+
+  policy = <<EOT
+#####################
+### READER POLICY ###
+#####################
+
+# Manage kv
+
+path "enablement/team2/team2-kv/data" {
+   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
+}
+
+path "enablement/team2/team2-kv/data/*" {
+   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
+}
+
+path "sys/internal/ui/mounts/enablement/team2/*" {
+   capabilities = ["create", "read", "update", "delete", "list", "sudo"]
+}
+
+EOT
+}

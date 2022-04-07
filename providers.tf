@@ -24,8 +24,8 @@ provider "vault" {
   alias = "enablement_namespace"
 }
 
-// team1 provider 
+// team2 provider 
 provider "vault" {
-  namespace = "enablement/team1"
-  alias = "team1_namespace"
+  namespace = "enablement/team2"
+  alias = "team2_namespace"
 }

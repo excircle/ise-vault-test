@@ -1,0 +1,6 @@
+resource "vault_mount" "kvv2-example" {
+  provider  = vault.team2_namespace
+  path        = "team2-kv"
+  type        = "kv-v2"
+  description = "team 2 kv"
+}
